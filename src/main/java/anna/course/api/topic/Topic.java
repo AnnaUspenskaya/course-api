@@ -1,16 +1,24 @@
 package anna.course.api.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+//import org.springframework.data.annotation.Id;
+//An entity class - the attributes are transformed to columns on the database table
+ @Entity 
 public class Topic {
-
-    private String id;
+     
+    @Id //primary key 
+     private String id;
     private String name;
     private String description;
 
+    
     public Topic() {
 
     }
 
     public Topic(String id, String name, String description) {
+        super();
         this.id = id;
         this.name = name;
         this.description = description;

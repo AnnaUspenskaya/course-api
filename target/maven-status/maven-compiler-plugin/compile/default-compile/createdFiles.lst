@@ -1,4 +1,9 @@
 anna/course/api/topic/TopicService.class
+anna/course/api/course/CourseController.class
+anna/course/api/course/CourseRepository.class
 anna/course/api/topic/Topic.class
+anna/course/api/topic/TopicRepository.class
+anna/course/api/course/Course.class
+anna/course/api/course/CourseService.class
 anna/course/api/topic/TopicController.class
 anna/course/api/CourseApiApp.class

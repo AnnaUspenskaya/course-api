@@ -2,6 +2,7 @@ package anna.course.api.topic;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +24,7 @@ public class TopicController {
 
     //GET request, shows only 1 topic 
     @RequestMapping("/topics/{id}")
-    public Topic getTopic(@PathVariable String id) { //pass variable from the path
+    public Optional<Topic> getTopic(@PathVariable String id) { //pass variable from the path
         return topicService.getTopic(id);
     }
 
